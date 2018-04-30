@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://GamePlay.gd" type="Script" id=1]
+[ext_resource path="res://left_pallete.png" type="Texture" id=2]
+[ext_resource path="res://right_pallete.png" type="Texture" id=3]
+[ext_resource path="res://ball.png" type="Texture" id=4]
+
+[node name="GameRoot" type="Node2D"]
+
+script = ExtResource( 1 )
+
+[node name="left" type="Node2D" parent="."]
+
+editor/display_folded = true
+position = Vector2( 50, 183 )
+
+[node name="left_pallete" type="Sprite" parent="left"]
+
+texture = ExtResource( 2 )
+
+[node name="right" type="Node2D" parent="."]
+
+editor/display_folded = true
+position = Vector2( 1000, 183 )
+
+[node name="right_pallete" type="Sprite" parent="right"]
+
+texture = ExtResource( 3 )
+
+[node name="ball" type="Node2D" parent="."]
+
+editor/display_folded = true
+position = Vector2( 550, 183 )
+
+[node name="ball" type="Sprite" parent="ball"]
+
+texture = ExtResource( 4 )
+
+[node name="PopupMenu" type="PopupMenu" parent="."]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 351.0
+margin_top = 203.0
+margin_right = 626.0
+margin_bottom = 321.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+popup_exclusive = false
+items = [  ]
+
+[node name="Label" type="Label" parent="PopupMenu"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 99.0
+margin_top = 51.0
+margin_right = 186.0
+margin_bottom = 66.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Game Over!"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
