@@ -1,7 +1,23 @@
 [gd_scene format=2]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" index="0"]
 
-[node name="BlockRoot" type="Node2D" parent="."]
+[node name="BlockRoot" type="Node2D" parent="." index="0"]
+
+[node name="one_block" type="Polygon2D" parent="." index="1"]
+
+polygon = PoolVector2Array( 0, 0, 30, 0, 30, 30, 0, 30 )
+uv = PoolVector2Array( 0, 0, 0, 1, 1, 1, 1, 0 )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+_sections_unfolded = [ "Invert", "Material", "Pause", "Texture", "Transform", "Visibility", "Z Index" ]
 
 
